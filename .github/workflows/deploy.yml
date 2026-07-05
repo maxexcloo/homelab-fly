@@ -56,7 +56,7 @@ jobs:
         uses: superfly/flyctl-actions/setup-flyctl@1.5
       - name: Setup sops
         if: matrix.deployment.action == 'deploy'
-        uses: nhedger/setup-sops@v2
+        uses: nhedger/setup-sops@v3
       - name: Decrypt Files
         if: matrix.deployment.action == 'deploy'
         env:
